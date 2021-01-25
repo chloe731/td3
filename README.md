@@ -31,13 +31,62 @@ from unittest import TestCase
 from bibliotheque import fonction2
 class MoyenneTestCase(TestCase):
 
-  def test_exemple(self):
+  def test_exemple(self): #Votre test a vous.
     assert fonction2() == 2
 
   def test_moyenne_111(self):
     assert moyenne([1,1,1]) == 1
 
 ```
+
+Modifier le fichier `.replit` pour obtenir le contenu suivant:
+
+```
+language = "python3"
+run = "python -m unittest discover"
+```
+
+5/ Utiliser des méthodes adéquates
+
+Avec les TestCase on peut utiliser des fonction spécifiques,
+remplacer `assert op1 == op2, message`  par `self.AssertEqual(op, op2, message)`
+message est facultatif.
+
+Les différentes fonctions disponibles pour les test:
+
+- assertAlmostEqual
+- assertDictContainsSubset
+- assertDictEqual
+- assertEqual
+- assertEquals
+- assertFalse
+- assertGreater
+- assertGreaterEqual
+- assertIn
+- assertIs
+- assertIsInstance
+- assertIsNone
+- assertIsNot
+- assertIsNotNone
+- assertItemsEqual
+- assertLess
+- assertLessEqual
+- assertListEqual
+- assertNotAlmostEqual
+- assertNotAlmostEquals
+- assertNotEqual
+- assertNotEquals
+- assertNotIn
+- assertNotIsInstance
+- assertNotRegexpMatches
+- assertRaises
+- assertSequenceEqual
+- assertSetEqual
+- assertTrue
+- assertTupleEqual
+
+Ecrire un classe pour
+
 Créer un dossier td3 et créer trois fichiers dedans :
 
 - tests.py
@@ -45,7 +94,6 @@ Créer un dossier td3 et créer trois fichiers dedans :
 - \_\_init\_\_.py
 
 
-Déplacer les fonctions et classes crées dans bibliothèque.py
 
 
 Dans le fichier main ajouter la ligne 'from td3.bibliotheque import moyenne'
