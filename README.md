@@ -42,7 +42,7 @@ Créer un dossier td3 et créer trois fichiers dedans :
 
 - tests.py
 - bibliotheque.py (sans accent)
-- \__init__.py
+- \_\_init\_\_.py
 
 
 Déplacer les fonctions et classes crées dans bibliothèque.py
