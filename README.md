@@ -24,7 +24,7 @@ créer une liste : l_1 = [1,1,1]
 Vérifier que `moyenne([1,1,1])` vaut 1 et que `ecart_type([1,1,1])` vaut zéro.
 
 
-4/ Créer un fichier test sur le modèle suivant:
+4/ Créer un fichier test_td3.py sur le modèle suivant:
 
 ```python
 from unittest import TestCase
@@ -104,6 +104,12 @@ changer la ligne `python -m unittest discover` pour `python -m unittest discover
 
 Dans packages ajouter pytest (6.2.1) en cliquant.
 
-Changer la ligne unitest pour simplement `pytest .; python main.py`
+Changer la ligne unittest pour simplement `pytest .; python main.py`
 
-8/
+8/Couverture de code
+
+Installer le module pytest-cov, ajouter ` --cov` entre pytest et `.` avec des espaces entre.
+Essayer de monter la couverture à 100%.
+
+
+
