@@ -28,11 +28,11 @@ Vérifier que `moyenne([1,1,1])` vaut 1 et que `écart_type([1,1,1])` vaut zéro
 
 ```python
 from unittest import TestCase
-
+from bibliotheque import fonction2
 class MoyenneTestCase(TestCase):
 
   def test_exemple(self):
-    assert 1 ==1
+    assert fonction2() == 2
 
   def test_moyenne_111(self):
     assert moyenne([1,1,1]) == 1
@@ -42,7 +42,7 @@ Créer un dossier td3 et créer trois fichiers dedans :
 
 - tests.py
 - bibliotheque.py (sans accent)
-- __init__.py
+- \_\_init\_\_.py
 
 
 Déplacer les fonctions et classes crées dans bibliothèque.py
