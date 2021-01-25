@@ -85,18 +85,17 @@ Les différentes fonctions disponibles pour les test:
 - assertTrue
 - assertTupleEqual
 
-Ecrire un classe pour
-
-Créer un dossier td3 et créer trois fichiers dedans :
-
-- tests.py
-- bibliotheque.py (sans accent)
-- \_\_init\_\_.py
+Écrire un classe pour les points 1D, le points 2D qui testent la norme et l'addition.
 
 
+6/ Créer un dossier td3 et créer trois fichiers dedans :
+
+- \_\_init\_\_.py (le laisser vide)
+- tests.py (déplacer le fichier)
+- bibliotheque.py (idem)
 
 
-Dans le fichier main ajouter la ligne 'from td3.bibliotheque import moyenne'
-déplacer aussi les classes créées pendant le td2.
+Vérifier que les test passent toujours.
 
+changer la ligne `python -m unittest discover` pour `python -m unittest discover; python main.py`
 
