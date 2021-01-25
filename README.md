@@ -91,7 +91,7 @@ Les différentes fonctions disponibles pour les test:
 6/ Créer un dossier td3 et créer trois fichiers dedans :
 
 - \_\_init\_\_.py (le laisser vide)
-- tests.py (déplacer le fichier)
+- test_td3.py (déplacer le fichier)
 - bibliotheque.py (idem)
 
 
@@ -99,3 +99,9 @@ Vérifier que les test passent toujours.
 
 changer la ligne `python -m unittest discover` pour `python -m unittest discover; python main.py`
 
+
+7/Utiliser pytest
+
+Dans packages ajouter pytest (6.2.1) en cliquant.
+
+Changer la ligne unitest pour simplement "pytest .; python main.py"
